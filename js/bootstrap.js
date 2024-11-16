@@ -4452,7 +4452,3 @@ function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-window.onload = function() {
-  // Reset the form fields when the page loads
-  document.getElementById("form").reset();
-};
