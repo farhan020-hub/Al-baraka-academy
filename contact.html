@@ -15,8 +15,8 @@
   <title>Al-Baraka Light Academy</title>
 
 
- <!-- font awesome -->
- <script src="https://kit.fontawesome.com/170d721fd7.js" crossorigin="anonymous"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/170d721fd7.js" crossorigin="anonymous"></script>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -65,6 +65,10 @@
 
                 <li class="nav-item ">
                   <a class="nav-link" href="admission.html"> Admission </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
                 </li>
 
                 <li class="nav-item">
@@ -162,8 +166,8 @@
     </span>
   </section>
 
-   <!-- Arrow Up Button -->
-   <div id="arrowUp" class="arrow-up" onclick="scrollToTop()">
+  <!-- Arrow Up Button -->
+  <div id="arrowUp" class="arrow-up" onclick="scrollToTop()">
     <i class="fa-solid fa-circle-up"></i>
   </div>
 
@@ -204,14 +208,32 @@
     <p>
       Copyright &copy; 2024 All Rights Reserved By Al-Baraka Light Academy
     </p>
+    <div class="subscribe-youtube">
+      <a href="https://www.youtube.com/@al-barakalightacademy" target="_blank" class="btn btn-danger">
+          <i class="fa fa-youtube-play"></i> Subscribe to Our YouTube Channel
+      </a>
   </section>
   <!-- footer section -->
 
   <script>
-    window.onload = function() {
-  // Reset the form fields when the page loads
-  document.getElementById("form").reset();
-};
+    window.onload = function () {
+      // Reset the form fields when the page loads
+      document.getElementById("form").reset();
+    };
+
+    window.onscroll = function() {
+    let arrowUp = document.getElementById("arrowUp");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      arrowUp.style.display = "block";
+    } else {
+      arrowUp.style.display = "none";
+    }
+  };
+
+  // Scroll to top function
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   </script>
 
 

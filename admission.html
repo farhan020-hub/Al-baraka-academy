@@ -15,12 +15,12 @@
   <title>Al-Baraka Light Academy</title>
 
 
- <!-- font awesome -->
- <script src="https://kit.fontawesome.com/170d721fd7.js" crossorigin="anonymous"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/170d721fd7.js" crossorigin="anonymous"></script>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
- 
+
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
   <!-- font wesome stylesheet -->
@@ -63,6 +63,10 @@
                 </li>
 
                 <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
 
@@ -92,8 +96,9 @@
                 We are currently welcoming applications for all our programs, from Day Care to Upper Primary. At
                 Al-Baraka Light Academy, every child is seen as a unique individual with immense potential. Our
                 admission process is simple and inclusive, ensuring every family has an opportunity to be part of our
-                vibrant community. <strong>To join us, our campus at Olekasasi B, off Rimpa Road, or contact us at +254
-                716 495 398 </strong>. Let us work together to provide your child with the best of both worlds—modern education
+                vibrant community. <strong>To join us, our school at Olekasasi B, off Rimpa Road, or contact us at +254
+                  716 495 398 </strong>. Let us work together to provide your child with the best of both worlds—modern
+                education
                 and a foundation rooted in Islamic principles.
               </p>
 
@@ -111,52 +116,74 @@
 
 
     <!-- end admission section -->
-  <!-- Arrow Up Button -->
-  <div id="arrowUp" class="arrow-up" onclick="scrollToTop()">
-    <i class="fa-solid fa-circle-up"></i>
-  </div>
+    <!-- Arrow Up Button -->
+    <div id="arrowUp" class="arrow-up" onclick="scrollToTop()">
+      <i class="fa-solid fa-circle-up"></i>
+    </div>
 
 
 
   </div>
 
-    <!-- end contact section -->
-    <section class="info_section layout_padding-top">
-      <div class="info_logo-box">
-        <h2>
-          Al-Baraka Light Academy
-        </h2>
-      </div>
-  
-      <div class="container">
-        <div class="social_container">
-  
-          <div class="social-box">
-            <a href="">
-              <img src="images/fb.png" alt="">
-            </a>
-  
-            <a href="">
-              <img src="images/twitter.png" alt="">
-            </a>
-            <a href="">
-              <img src="images/linkedin.png" alt="">
-            </a>
-            <a href="">
-              <img src="images/instagram.png" alt="">
-            </a>
-          </div>
+  <!-- end contact section -->
+  <section class="info_section layout_padding-top">
+    <div class="info_logo-box">
+      <h2>
+        Al-Baraka Light Academy
+      </h2>
+    </div>
+
+    <div class="container">
+      <div class="social_container">
+
+        <div class="social-box">
+          <a href="">
+            <img src="images/fb.png" alt="">
+          </a>
+
+          <a href="">
+            <img src="images/twitter.png" alt="">
+          </a>
+          <a href="">
+            <img src="images/linkedin.png" alt="">
+          </a>
+          <a href="">
+            <img src="images/instagram.png" alt="">
+          </a>
         </div>
       </div>
-    </section>
-  
-    <!-- footer section -->
-    <section class="container-fluid footer_section">
-      <p>
-        Copyright &copy; 2024 All Rights Reserved By Al-Baraka Light Academy
-      </p>
-    </section>
-    <!-- footer section -->
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      Copyright &copy; 2024 All Rights Reserved By Al-Baraka Light Academy
+    </p>
+    <div class="subscribe-youtube">
+      <a href="https://www.youtube.com/@al-barakalightacademy" target="_blank" class="btn btn-danger">
+          <i class="fa fa-youtube-play"></i> Subscribe to Our YouTube Channel
+      </a>
+  </section>
+  <!-- footer section -->
+
+  <script>
+   
+
+    window.onscroll = function() {
+    let arrowUp = document.getElementById("arrowUp");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      arrowUp.style.display = "block";
+    } else {
+      arrowUp.style.display = "none";
+    }
+  };
+
+  // Scroll to top function
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  </script>
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>

@@ -600,6 +600,64 @@ a:focus {
 
 /* end info section */
 
+/* Gallery Section Styles */
+.gallery_section {
+  padding: 60px 0;
+  background-color: #f0f0f0;
+}
+.gallery_section h2 {
+  margin-bottom: 40px;
+}
+.video-thumbnail,
+.image-thumbnail {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.video-thumbnail img,
+.image-thumbnail img {
+  width: 100%;
+  border-radius: 10px;
+}
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+video {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+/* youtube section */
+.subscribe_section {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+  margin-top: 20px;
+}
+.subscribe_section h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+.subscribe_section a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #FF0000;
+}
+.subscribe_section a:hover {
+  background-color: #cc0000;
+}
+
 /* footer section*/
 
 .footer_section {
@@ -619,6 +677,20 @@ a:focus {
   color: #fdfdfe;
 }
 
+.subscribe-youtube {
+  text-align: center;
+  margin-top: 10px;
+}
+.subscribe-youtube a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #FF0000;
+}
+.subscribe-youtube a:hover {
+  background-color: #cc0000;
+}
 
 
 /* end footer section*/

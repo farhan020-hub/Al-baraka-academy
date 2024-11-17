@@ -65,6 +65,9 @@
                   <a class="nav-link" href="admission.html"> Admission </a>
                 </li>
 
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact Us</a>
@@ -82,10 +85,10 @@
             LEARN WITH US
           </h1>
           <p>
-            At Al-Baraka Light Academy, we offer a comprehensive CBC & Islamic Curriculum, providing your child with
+            At Al-Baraka Light Academy, we offer a comprehensive CBC, Islamic Curriculum & C.R.E, providing your child with
             affordable, high-quality education that fosters academic excellence and spiritual growth. Empowering
             students for a brighter future!
-            
+
           </p>
           <div class="hero_btn-continer">
             <a href="/about.html" class="call_to-btn btn_white-border">
@@ -381,11 +384,28 @@
     <p>
       Copyright &copy; 2024 All Rights Reserved By Al-Baraka Light Academy
     </p>
+    <div class="subscribe-youtube">
+      <a href="https://www.youtube.com/@al-barakalightacademy" target="_blank" class="btn btn-danger">
+          <i class="fa fa-youtube-play"></i> Subscribe to Our YouTube Channel
+      </a>
   </section>
   <!-- footer section -->
 
   <script>
-    
+    window.onscroll = function() {
+    let arrowUp = document.getElementById("arrowUp");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      arrowUp.style.display = "block";
+    } else {
+      arrowUp.style.display = "none";
+    }
+  };
+
+  // Scroll to top function
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   </script>
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>

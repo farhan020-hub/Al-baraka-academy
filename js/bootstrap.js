@@ -4438,17 +4438,3 @@
 //# sourceMappingURL=bootstrap.js.map
 
 // Show/hide the arrow up button
-window.onscroll = function () {
-  let arrowUp = document.getElementById("arrowUp");
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    arrowUp.style.display = "block";
-  } else {
-    arrowUp.style.display = "none";
-  }
-};
-
-// Scroll to top function
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
